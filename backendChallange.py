@@ -1,31 +1,76 @@
 class Device:
-    def __init__(self):
+    '''
+    Contrust a Device instance. This class is mainly used as the base class for other Smart Classes.
+
+    Attributes:
+        switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise. By default is False.
+
+    Methods:
+        toggleSwitch(): Toggles the value of the switchedOn attribute.
+        getSwitchedOn(): Returns the value of the switchedOn attribute.
+    '''
+    def __init__(self) -> None:
         self.switchedOn = False
 
-    def toggleSwitch(self):
+    def toggleSwitch(self) -> None:
+        '''
+        Toggles the switchedOn attribute of the object.
+        If the object is switched-off, it will be switched-on, and vice versa.
+        '''
         self.switchedOn = not self.switchedOn
 
-    def getSwitchedOn(self):
+    def getSwitchedOn(self) -> bool:
+        '''
+        Get the current switchedOn status of the object.
+        Returns:
+            bool: True if the object is switched on, False otherwise.
+        '''
         return self.switchedOn
     
 
 
 class SmartPlug(Device):
-    def __init__(self, consumptionRate: int):
+    '''
+    Contrust a SmartPlug instance. Used in the SmartHome class, Inherits from Device class.
+
+    Attributes:
+        switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise.
+        consumptionRate (int): The consumption rate (power usuage) that the SmartPlug uses.
+
+    Methods:
+        getConsumptionRate(): Returns the value of the consumptionRate attribute.
+        getDeviceType(): Returns the device type ("Smart Plug").
+        setConsuptionRate(): Sets the value of the consumptionRate attribute.
+    '''
+    def __init__(self, consumptionRate: int) -> None:
         super().__init__()
-        self.consumptionRate = 150
         self.consumptionRate = consumptionRate
 
-    def getConsumptionRate(self):
+    def getConsumptionRate(self) -> int:
+        '''
+        Gets the value of the consumptionRate attribute.
+        Returns int.
+        '''
         return self.consumptionRate
     
-    def getDeviceType(self):
+    def getDeviceType(self) -> str:
+        '''
+        Gets the device type of the Smart Plug.
+        Returns: "Smart Plug".
+        '''
         return "Smart Plug"
 
-    def setConsuptionRate(self, newConsumptionRate: int):
+    def setConsuptionRate(self, newConsumptionRate: int) -> None:
+        '''
+        Sets the consumption rate of the SmartPlug.
+        Any int value from 0 - 150.
+        '''
         self.consumptionRate = newConsumptionRate
 
-    def __str__(self):
+    def __str__(self) -> str:
+        '''
+        Returns the device type, it's switchedOn attribute and the consumptionRate.
+        '''
         output = "Smart Plug - "
         output += "On" if self.switchedOn else "Off"
         output += f", Consumption rate: {self.consumptionRate}"
@@ -34,22 +79,49 @@ class SmartPlug(Device):
 
 
 class SmartOven(Device):
-    def __init__(self):
+    '''
+    Contrust a SmartOven instance. Used in the SmartHome class, Inherits from Device class.
+
+    Attributes:
+        switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise. By default is False.
+        temperature (int): The consumption rate (power usuage) that the SmartPlug uses. By default is 0.
+
+    Methods:
+        getTemperature(): Returns the value of the temperature attribute.
+        getDeviceType(): Returns the device type ("Smart Oven").
+        setTemperature(): Sets the value of the temperature attribute.
+    '''
+    def __init__(self) -> None:
         super().__init__()
         self.switchedOn = False
         self.temperature = 0
     
-    def getTemperature(self):
+    def getTemperature(self) -> int:
+        '''
+        Gets the value of the temperature attribute.
+        Returns int.
+        '''
         return self.temperature
     
-    def getDeviceType(self):
+    def getDeviceType(self) -> str:
+        '''
+        Gets the device type of the Smart Device.
+        Returns: "Smart Oven".
+        '''
         return "Smart Oven"
     
-    def setTemperature(self, newTemperature: int):
+    def setTemperature(self, newTemperature: int) -> None:
+        '''
+        Sets the temperature of the SmartOven.
+        Any int value from 0 - 260.
+        '''
         if newTemperature in range(0, 261):
             self.temperature = newTemperature
 
-    def __str__(self):
+    def __str__(self) -> str:
+        '''
+        Returns the device type, it's switchedOn attribute and the temperature.
+        '''
         output = "Smart Oven - "
         output += "On" if self.switchedOn else "Off"
         output += f", Temperature: {self.temperature} Degrees Celcius"
@@ -58,44 +130,84 @@ class SmartOven(Device):
 
 
 class SmartHome:
-    def __init__(self):
+    '''
+    Contrust a SmartHome instance. 
+
+    Attributes:
+
+    Methods:
+    '''
+    def __init__(self) -> None:
+        '''
+        
+        '''
         self.devices = []
 
-    def getDevices(self):
+    def getDevices(self) -> list:
+        '''
+        
+        '''
         return self.devices
     
-    def getDeviceAt(self, index: int):
+    def getDeviceAt(self, index: int) -> SmartOven | SmartPlug:
+        '''
+        
+        '''
         return self.devices[index]
     
-    def removeDeviceAt(self, index: int):
+    def removeDeviceAt(self, index: int) -> None:
+        '''
+        
+        '''
         self.devices.remove(self.devices[index])
 
-    def removeAllDevices(self):
+    def removeAllDevices(self) -> None:
+        '''
+        
+        '''
         self.devices = []
     
-    def addDevice(self, device):
+    def addDevice(self, device) -> None:
+        '''
+        
+        '''
         self.devices.append(device)
 
-    def toggleSwitchAt(self, index: int):
+    def toggleSwitchAt(self, index: int) -> None:
+        '''
+        
+        '''
         self.devices[index].toggleSwitch()
 
-    def turnOnAll(self):
+    def turnOnAll(self) -> None:
+        '''
+        
+        '''
         for device in self.devices:
             if not device.switchedOn:
                 device.toggleSwitch()
 
-    def turnOffAll(self):
+    def turnOffAll(self) -> None:
+        '''
+        
+        '''
         for device in self.devices:
             if device.switchedOn:
                 device.toggleSwitch()
 
-    def setConsumptionRateAtIndex(self, index, newConsumptionRate):
+    def setConsumptionRateAtIndex(self, index, newConsumptionRate) -> None:
+        '''
+        
+        '''
         self.devices[index].setConsuptionRate(newConsumptionRate)
 
-    def setOvenTemperatureAtIndex(self, index, newTemperature):
+    def setOvenTemperatureAtIndex(self, index, newTemperature) -> None:
+        '''
+        
+        '''
         self.devices[index].setTemperature(newTemperature)
 
-    def __str__(self):
+    def __str__(self)  -> str:
         output = f"Smart Home has {len(self.devices)} devices:\n"
         for device in self.devices:
             output += f"{device}\n"
