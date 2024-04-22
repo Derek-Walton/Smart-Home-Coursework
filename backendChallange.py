@@ -1,6 +1,6 @@
 class Device:
     '''
-    Contrust a Device instance. This class is mainly used as the base class for other Smart Classes.
+    Constructs a Device instance. This class is mainly used as the base class for other Smart Classes.
 
     Attributes:
         switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise. By default is False.
@@ -31,7 +31,7 @@ class Device:
 
 class SmartPlug(Device):
     '''
-    Contrust a SmartPlug instance. Used in the SmartHome class, Inherits from Device class.
+    Constructs a SmartPlug instance with the parent Device. Used in the SmartHome class.
 
     Attributes:
         switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise.
@@ -80,7 +80,7 @@ class SmartPlug(Device):
 
 class SmartOven(Device):
     '''
-    Contrust a SmartOven instance. Used in the SmartHome class, Inherits from Device class.
+    Constructs a SmartOven instance with the parent Device. Used in the SmartHome class.
 
     Attributes:
         switchedOn (bool): The switchedOn status of the object; True if switched on, False otherwise. By default is False.
@@ -131,57 +131,67 @@ class SmartOven(Device):
 
 class SmartHome:
     '''
-    Contrust a SmartHome instance. 
+    Constructs a SmartHome instance. A collection of Smart Devices.
 
     Attributes:
+        devices (list): The list of devices in the SmartHome.
 
     Methods:
+        getDevices(): Returns the device attribute.
+        getDeviceAt(): Returns the device at the specified index.
+        removeDeviceAt(): Removes the device from the devices attribute at the specified index.
+        removeAllDevices(): Removes all the devices from the devices attribute.
+        addDevice(): Appends the device to the devices attribute.
+        toggleSwitchAt(): Toggles the switchedOn attribute of the device at the specified index.
+        turnOnAll(): Sets the value of every device's switchedOn attribute to true.
+        turnOffAll(): Sets the value of every device's switchedOn attribute to false.
+        setConsumptionRateAtIndex(): Sets the consumptionRate of the device at the specified index.
+        setOvenTemperatureAtIndex(): Sets the temperature of the device at the specified index.
     '''
     def __init__(self) -> None:
-        '''
-        
-        '''
         self.devices = []
 
     def getDevices(self) -> list:
         '''
-        
+        Gets the devices in the SmartHome as a list.
+        Returns: list[SmartPlug | SmartOven]
         '''
         return self.devices
     
     def getDeviceAt(self, index: int) -> SmartOven | SmartPlug:
         '''
-        
+        Gets the device at the specified index.
+        Returns: SmartPlug | SmartOven
         '''
         return self.devices[index]
     
     def removeDeviceAt(self, index: int) -> None:
         '''
-        
+        Removes the device from the devices attribute at the specified index.
         '''
         self.devices.remove(self.devices[index])
 
     def removeAllDevices(self) -> None:
         '''
-        
+        Removes all the devices from the devices attribute.
         '''
         self.devices = []
     
     def addDevice(self, device) -> None:
         '''
-        
+        Appends the device to the devices attribute.
         '''
         self.devices.append(device)
 
     def toggleSwitchAt(self, index: int) -> None:
         '''
-        
+        Toggles the switchedOn attribute of the device at the specified index.
         '''
         self.devices[index].toggleSwitch()
 
     def turnOnAll(self) -> None:
         '''
-        
+        Sets the value of every device's switchedOn attribute to true.
         '''
         for device in self.devices:
             if not device.switchedOn:
@@ -189,7 +199,7 @@ class SmartHome:
 
     def turnOffAll(self) -> None:
         '''
-        
+        Sets the value of every device's switchedOn attribute to false.
         '''
         for device in self.devices:
             if device.switchedOn:
@@ -197,17 +207,20 @@ class SmartHome:
 
     def setConsumptionRateAtIndex(self, index, newConsumptionRate) -> None:
         '''
-        
+        Sets the consumptionRate of the device at the specified index.
         '''
         self.devices[index].setConsuptionRate(newConsumptionRate)
 
     def setOvenTemperatureAtIndex(self, index, newTemperature) -> None:
         '''
-        
+        Sets the temperature of the device at the specified index.
         '''
         self.devices[index].setTemperature(newTemperature)
 
     def __str__(self)  -> str:
+        '''
+        Returns the number of devices in the SmartHome and the list of devices and the devices attributes.
+        '''
         output = f"Smart Home has {len(self.devices)} devices:\n"
         for device in self.devices:
             output += f"{device}\n"
