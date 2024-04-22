@@ -2,15 +2,32 @@
 
 A Smart Home app protoype written in Python using the Tkinter Graphical User Interface. This was submitted as the second piece of coursework for the first-year Programming module at the University of Portsmouth.
 
+## Table of contents
+
+- [Main Features](#main-features)
+  - [Fully Interactive GUI ](#fully-interactive-gui )
+  - [Interface & Accessibility Settings](#Interface-&-Accessibility-Settings)
+  - [Permanent Data Storage](#Permanent-Data-Storage)
+  - [Device Scheduler](#Device-Scheduler)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+
 ## Main Features
 
 ### Fully Interactive GUI 
 
 A fully interactive and working app where you can add, edit and remove devices from your 'Smart Home.
+![Main Menu](./README-images/menu.png)
+![](./README-images/)
 
 ### Interface & Accessibility Settings
 
 Functioning Accessibility Settings such as, a light and dark mode, a custom colour scheme that you can choose and changing the character size.
+![Dark Mode](./README-images/menu-dark.png)
+![](./README-images/)
+![](./README-images/)
+![](./README-images/)
 
 ### Permanent Data Storage
 
