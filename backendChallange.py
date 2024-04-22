@@ -226,8 +226,9 @@ class SmartHome:
             output += f"{device}\n"
         return output
     
-# Testing
 
+# Testing
+    
 def testSmartPlug():
     mySmartPlug = SmartPlug(45)
     mySmartPlug.toggleSwitch()
