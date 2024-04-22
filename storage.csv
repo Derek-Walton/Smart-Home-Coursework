@@ -1,0 +1,5 @@
+Oven,Off,0,01:00,04:00
+Plug,On,0,05:00,09:00
+Oven,Off,0,10:00,12:00
+Plug,Off,115,14:00,17:00
+Plug,Off,80,None,None
