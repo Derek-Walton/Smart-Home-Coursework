@@ -5,6 +5,7 @@ from tkinter import filedialog
 from csv import *
 
 # Only difference is overriding the Tkinter Button with the tkmacosx Button
+# and adding the attribute 'borderless = 1' to fix the border of the button.
 from tkmacosx import Button
 
 PADDING = 5
