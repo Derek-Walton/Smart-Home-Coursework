@@ -100,7 +100,7 @@ Mac Tkinter faces an issue that has yet to have been fixed where the Button widg
 ![Mac Menu](./README-images/menu-mac.png)
 
 #### Dark mode
-![Mac Menu](./README-images/menu-mac-dark.png)
+![Mac Menu Dark Mode](./README-images/menu-mac-dark.png)
 
 ### Installation
 
