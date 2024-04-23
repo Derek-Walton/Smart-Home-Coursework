@@ -96,7 +96,7 @@ Mac Tkinter faces an issue that has yet to have been fixed where the Button widg
 #### Dark Mode
 ![Mac Error Dark Mode](./README-images/mac-error-dark.png)
 
-#### How it should look
+#### How it should look:
 ![Mac Menu](./README-images/menu-mac.png)
 
 #### Dark mode
