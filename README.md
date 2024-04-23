@@ -109,7 +109,7 @@ After installing tkmacosx, you'll need to run the Mac specified frontend.py.
 ## Usage
 
 1. Clone this project
-  1.1. If on Mac, [install tkmacosx](#Installation)
+1.1 If on Mac, [install tkmacosx](#Installation)
 2. Run [__frontend.py__](./frontend.py)
 3. Enter 5 devices
 
