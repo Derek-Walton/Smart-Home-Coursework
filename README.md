@@ -14,7 +14,7 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
   - [If On Mac](#If-ran-on-Mac)
   - [Installation](#Installation)
 - [Usage](#usage)
-  -[Input](#Input)
+  - [Input](#Input)
 
 ## Main Features
 
