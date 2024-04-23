@@ -66,13 +66,7 @@ Lets you set specific times for devices to turn on or off automatically.
 
 ![Edit Device Menu Dark](./README-images/edit-device-dark.png)
 
-#### Pre-Defined Layout
-
-All patchwork samples have a layout which determines the arrangement and colouring of patch designs. This layout was determined by our student numbers and so is pre-defined here.
-
-### Patches
-
-Individual patches are 100 × 100 in size and contain one of two geometric designs comprising several shapes, as determined by the layout.
+### 1 MORE SECTION IS NEEDED
 
 ### Input
 
