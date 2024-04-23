@@ -1,6 +1,6 @@
-# Programming Coursework Smart Home App
+# Programming Coursework Smart Home App 💻
 
-A Smart Home app protoype written in Python using the Tkinter Graphical User Interface. This was submitted as the second piece of coursework for the first-year Programming module at the University of Portsmouth.
+A __Smart Home app__ protoype written in __Python__ using __Tkinter__ (Python's Standard Graphical User Interface Package). This was submitted as the second piece of coursework for the first-year Programming module at the University of Portsmouth.
 
 ## Table of contents
 
@@ -20,7 +20,7 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
 
 ### Fully Interactive GUI 
 
-A fully interactive and working app where you can add, edit and remove devices from your 'Smart Home.
+A fully interactive and working app where you can add, edit and remove devices from your 'Smart Home'.
 
 #### Main Menu
 ![Main Menu](./README-images/menu.png)
@@ -83,7 +83,7 @@ Lets you set specific times for devices to turn on or off automatically.
 
 * Python 3
 
-This project uses Tkinter which is a standard python package that comes pre-installed with Python.
+This project uses __Tkinter__ which is a standard python package that comes pre-installed with Python.
 If you're on windows, you can skip straight to the usage section.
 
 ### If ran on Mac
@@ -95,6 +95,12 @@ Mac Tkinter faces an issue that has yet to have been fixed where the Button widg
 
 #### Dark Mode
 ![Mac Error Dark Mode](./README-images/mac-error-dark.png)
+
+#### How it should look
+![Mac Menu](./README-images/menu-mac.png)
+
+#### Dark mode
+![Mac Menu](./README-images/menu-mac-dark.png)
 
 ### Installation
 
@@ -117,8 +123,8 @@ After installing tkmacosx, you'll need to run the Mac specified [Frontend File](
 
 Upon running the program, the user is prompted via the shell to enter:
 
-* The __device__ the user would like to add (Smart Plug or Smart Oven)
-* The consumption rate if 'Smart Plug' was chosen (the rate of power consumption)
+1. The __device__ the user would like to add (Smart Plug or Smart Oven)
+2. The consumption rate if 'Smart Plug' was chosen (the rate of power consumption)
 
 #### This is repeated 5 times.
 Afterwards, the user will be able to manage their Smart Home to their liking.
