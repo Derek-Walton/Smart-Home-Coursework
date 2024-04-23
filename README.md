@@ -2,6 +2,10 @@
 
 A __Smart Home app__ protoype written in __Python__ using __Tkinter__ (Python's Standard Graphical User Interface Package). This was submitted as the second piece of coursework for the first-year Programming module at the University of Portsmouth.
 
+## Overview
+
+The primary objective of this coursework was to develop a prototype GUI app that interacts with smart home objects. The prototype must provide intuitive user interfaces for managing smart devices, toggling their states, and setting device attributes.
+
 ## Table of contents
 
 - [Main Features](#main-features)
