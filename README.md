@@ -104,13 +104,13 @@ To install, run the following command in the shell:
 pip install tkmacosx
 ```
 
-After installing tkmacosx, you'll need to run the Mac specified frontend.py.
+After installing tkmacosx, you'll need to run the Mac specified [Frontend File](./frontendMac.py).
 
 ## Usage
 
 1. Clone this project
 2. If on Mac, [install tkmacosx](#If-ran-on-Mac)
-3. Run [__frontend.py__](./frontend.py)
+3. Run [__frontend.py__](./frontend.py), if on Mac; Run [__frontendMac.py__](./frontendMac.py)
 4. Enter 5 devices
 
 ### Input
