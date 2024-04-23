@@ -108,13 +108,26 @@ Other keys have no effect on a selected patch. When selected, a patch will show 
 
 ## Requirements
 
-This project uses features from John Zelle's graphics module, [graphics.py](https://mcsp.wartburg.edu/zelle/python/graphics.py). Please ensure this is installed for the patchwork sample to display.
+* Python 3
+
+This project uses Tkinter which is a standard python package that comes pre-installed with Python
+
+### If ran on Mac
+
+Mac Tkinter faces an issue that has yet to have been fixed where the Button widget's background can't be changed. The only work-around to this issue is by installing a extension for Tkinter, [tkmacosx](https://pypi.org/project/tkmacosx/), and importing the [Button widget](https://github.com/Saadmairaj/tkmacosx#button-widget). This solves the issue and allows the Button to function as normal.
+
+If ran on Mac without tkmacosx:
+
+
+#### Installation
 
 To install, run the following command in the shell:
 
 ```
-pip install -r requirements.txt
+pip install tkmacosx
 ```
+
+After installing tkmacosx, you'll need to run the Mac specified frontend.py
 
 ## Usage
 
