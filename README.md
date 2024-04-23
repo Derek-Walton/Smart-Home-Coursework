@@ -12,6 +12,8 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+- [Requirments](#requirments)
+- [Usage](#usage)
 
 ## Main Features
 
@@ -110,7 +112,7 @@ Other keys have no effect on a selected patch. When selected, a patch will show 
 
 * Python 3
 
-This project uses Tkinter which is a standard python package that comes pre-installed with Python
+This project uses Tkinter which is a standard python package that comes pre-installed with Python.
 
 ### If ran on Mac
 
@@ -127,7 +129,7 @@ To install, run the following command in the shell:
 pip install tkmacosx
 ```
 
-After installing tkmacosx, you'll need to run the Mac specified frontend.py
+After installing tkmacosx, you'll need to run the Mac specified frontend.py.
 
 ## Usage
 
