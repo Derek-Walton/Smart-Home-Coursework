@@ -50,8 +50,18 @@ Functioning Accessibility Settings such as, a light and dark mode, a custom colo
 #### Font Settings
 ![Font Settings](./README-images/setting-font.png)
 
-#### Settings
-![](./README-images/)
+### Error Messages
+
+Appropriate error messages were given in case of wrong input type / submitting before choosing an option.
+
+#### Example 1
+![Error Example 1](./README-images/error-handling-1)
+
+#### Example 2
+![Error Example 2](./README-images/error-handling-2)
+
+#### Example 3
+![Error Example 3](./README-images/error-handling-3)
 
 
 ### Permanent Data Storage
