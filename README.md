@@ -9,10 +9,8 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
   - [Interface & Accessibility Settings](#Interface-&-Accessibility-Settings)
   - [Permanent Data Storage](#Permanent-Data-Storage)
   - [Device Scheduler](#Device-Scheduler)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Requirments](#requirments)
+- [Requirements](#Requirements)
+  - [If On Mac](#If-ran-on-Mac)
 - [Usage](#usage)
 
 ## Main Features
