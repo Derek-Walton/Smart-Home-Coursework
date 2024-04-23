@@ -55,13 +55,13 @@ Functioning Accessibility Settings such as, a light and dark mode, a custom colo
 Appropriate error messages were given in case of wrong input type / submitting before choosing an option.
 
 #### Example 1
-![Error Example 1](./README-images/error-handling-1)
+![Error Example 1](./README-images/error-handling-1.png)
 
 #### Example 2
-![Error Example 2](./README-images/error-handling-2)
+![Error Example 2](./README-images/error-handling-2.png)
 
 #### Example 3
-![Error Example 3](./README-images/error-handling-3)
+![Error Example 3](./README-images/error-handling-3.png)
 
 
 ### Permanent Data Storage
