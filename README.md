@@ -7,11 +7,14 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
 - [Main Features](#main-features)
   - [Fully Interactive GUI ](#fully-interactive-gui )
   - [Interface & Accessibility Settings](#interface-&-accessibility-settings)
+  - [Appropriate Error Messages](#Error-Messages)
   - [Permanent Data Storage](#Permanent-Data-Storage)
   - [Device Scheduler](#Device-Scheduler)
 - [Requirements](#Requirements)
   - [If On Mac](#If-ran-on-Mac)
+  - [Installation](#Installation)
 - [Usage](#usage)
+  -[Input](#Input)
 
 ## Main Features
 
@@ -76,21 +79,12 @@ Lets you set specific times for devices to turn on or off automatically.
 
 ![Edit Device Menu Dark](./README-images/edit-device-dark.png)
 
-### 1 MORE SECTION IS NEEDED
-
-### Input
-
-Upon running the program, the user is prompted via the shell to enter:
-
-* The __device__ the user would like to add (Smart Plug or Smart Oven)
-* The consumption rate if 'Smart Plug' was chosen (the rate of power consumption)
-
-
 ## Requirements
 
 * Python 3
 
 This project uses Tkinter which is a standard python package that comes pre-installed with Python.
+If you're on windows, you can skip straight to the usage section.
 
 ### If ran on Mac
 
@@ -114,4 +108,19 @@ After installing tkmacosx, you'll need to run the Mac specified frontend.py.
 
 ## Usage
 
-To use the Smart Home GUI, run __frontend.py__.
+1. Clone this project
+  1.1. If on Mac, [install tkmacosx](#Installation)
+2. Run [__frontend.py__](./frontend.py)
+3. Enter 5 devices
+
+### Input
+
+Upon running the program, the user is prompted via the shell to enter:
+
+* The __device__ the user would like to add (Smart Plug or Smart Oven)
+* The consumption rate if 'Smart Plug' was chosen (the rate of power consumption)
+
+#### This is repeated 5 times.
+Afterwards, the user will be able to manage their Smart Home to their liking.
+
+## Thank you for reading 👋
