@@ -81,30 +81,6 @@ Upon running the program, the user is prompted via the shell to enter:
 * The __device__ the user would like to add (Smart Plug or Smart Oven)
 * The consumption rate if 'Smart Plug' was chosen (the rate of power consumption)
 
-#### Valid Sizes
-
-Valid sizes for the patchwork samples are __5 × 5__, __7 × 7__, or __9 × 9__. These are multiplied by 100 to give the dimensions of the window.
-
-The expected input is just one number that will be the common value for both the width and height.
-
-#### Valid Colours
-
-Valid colours for the patches are __blue__, __green__, __magenta__, __orange__, __pink__, or __red__.
-
-### Editing
-
-After a patchwork sample has been drawn, the user is able to interact with the patches it contains. They may select an individual patch by clicking on it and then pressing the following keys:
-
-* if the selected patch has not been deleted:
-    * the 'Enter' key to deselect the patch
-    * the 's' key to switch the patch design to the other
-    * the 'd' key to delete the patch, leaving an empty space
-    
-* if the selected patch has been deleted:
-    * the key for the first letter of a valid colour to create a new patch with the second design of this colour
-        * e.g. 'r' for 'red'
-
-Other keys have no effect on a selected patch. When selected, a patch will show a thick black border.
 
 ## Requirements
 
@@ -116,10 +92,13 @@ This project uses Tkinter which is a standard python package that comes pre-inst
 
 Mac Tkinter faces an issue that has yet to have been fixed where the Button widget's background can't be changed. The only work-around to this issue is by installing a extension for Tkinter, [tkmacosx](https://pypi.org/project/tkmacosx/), and importing the [Button widget](https://github.com/Saadmairaj/tkmacosx#button-widget). This solves the issue and allows the Button to function as normal.
 
-If ran on Mac without tkmacosx:
+#### If ran on Mac without tkmacosx:
+![Mac Error](./README-images/mac-error.png)
 
+#### Dark Mode
+![Mac Error Dark Mode](./README-images/mac-error-dark.png)
 
-#### Installation
+### Installation
 
 To install, run the following command in the shell:
 
