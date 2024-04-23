@@ -6,7 +6,7 @@ A Smart Home app protoype written in Python using the Tkinter Graphical User Int
 
 - [Main Features](#main-features)
   - [Fully Interactive GUI ](#fully-interactive-gui )
-  - [Interface & Accessibility Settings](#Interface-&-Accessibility-Settings)
+  - [Interface & Accessibility Settings](#interface-&-accessibility-settings)
   - [Permanent Data Storage](#Permanent-Data-Storage)
   - [Device Scheduler](#Device-Scheduler)
 - [Requirements](#Requirements)
